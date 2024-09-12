@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.btn{
+	width: 20%;
+	height: 2.5rem;
+	border-radius: 20px;
+	color: $telus-white;
+	font-weight: 600;
+	border: 3px solid $telus-green-dark;
+	cursor: pointer;
+	color: $telus-green-dark;
+	background-color: $telus-white;
+
+	&:hover{
+		background-color: $telus-green-dark;
+		color: $telus-white;
+	}
+
+	&:focus{
+		background-color: $telus-green-dark;
+		color: $telus-white;
+	}
+}
