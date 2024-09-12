@@ -1,0 +1,60 @@
+{
+	"bundles": {
+		"basic": {
+			"streaming-sites": {
+				"netflix": {
+					"img": "./assets/netflix.png",
+					"description": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.You can watch as much as you want, whenever you want. There's always something new to discover and new TV shows and movies are added every week! ",
+					"retail-price": "5.99"
+				},
+				"disney-plus": {
+					"img": "./assets/disney.png",
+					"description": "Disney+ is the dedicated streaming home for movies and shows from Disney, Pixar, Marvel, Star Wars, and National Geographic, along with The Simpsons and much more.",
+					"retail-price": "7.99"
+				},
+				"amazon": {
+					"img": "./assets/amazonprime.png",
+					"description": "Watch movies, shows, and more on Prime Video Amazon Originals, popular movies, shows, sports, and live TV – it's right here. Prime members can watch even more by subscribing to premium and specialty channels.",
+					"retail-price": "9.99"
+				},
+				"telus-tv": {
+					"img": "./assets/TELUS_TV.jpg",
+					"description": "Demand the best. Watch what you want, when you want. Rent, buy or enjoy free shows and movies On Demand anytime from the comfort of your couch. ",
+					"retail-price": "included"
+				}
+			},
+			"price": "20",
+			"original-value": "23.97",
+			"percent-savings": "17",
+			"plan-description": "Some decisions are stressful, but saving 17% off your favourite streaming services is a no brainer. Plus, you can easily transfer over your current streaming subscriptions to Stream+."
+		},
+		"premium": {
+			"streaming-sites": {
+				"netflix": {
+					"img": "./assets/netflix.png",
+					"description": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.You can watch as much as you want, whenever you want. There's always something new to discover and new TV shows and movies are added every week! ",
+					"retail-price": "20.99"
+				},
+				"disney-plus": {
+					"img": "./assets/disney.png",
+					"description": "Disney+ is the dedicated streaming home for movies and shows from Disney, Pixar, Marvel, Star Wars, and National Geographic, along with The Simpsons and much more.",
+					"retail-price": "14.99"
+				},
+				"amazon": {
+					"img": "./assets/amazonprime.png",
+					"description": "Watch movies, shows, and more on Prime Video Amazon Originals, popular movies, shows, sports, and live TV – it's right here. Prime members can watch even more by subscribing to premium and specialty channels.",
+					"retail-price": "9.99"
+				},
+				"telus-tv": {
+					"img": "./assets/TELUS_TV.jpg",
+					"description": "Demand the best. Watch what you want, when you want. Rent, buy or enjoy free shows and movies On Demand anytime from the comfort of your couch. ",
+					"retail-price": "included"
+				}
+			},
+			"price": "38",
+			"original-value": "45.97",
+			"percent-savings": "17",
+			"plan-description": "*AD FREE* Some decisions are stressful, but saving 17% off your favourite streaming services is a no brainer. Plus, you can easily transfer over your current streaming subscriptions to Stream+."
+		}
+	}
+}
