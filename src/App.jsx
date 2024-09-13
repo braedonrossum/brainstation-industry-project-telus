@@ -1,13 +1,15 @@
 
 import './App.scss'
 import Button from './components/Button/Button'
-import NavBarBundle from './components/NavBar/NavBarBundle/NavBarBundle'
+// import NavBarBundleRender from './components/NavBarRender/NavBarBundleRender'
+// import NavBarStreamSiteRender from './components/NavBarRender/NavBarStreamSiteRender'
+
 
 function App() {
-
   return (
     <div>
-      <NavBarBundle />
+      {/* <NavBarBundleRender />
+      <NavBarStreamSiteRender /> */}
     </div>
   )
 }
