@@ -1,0 +1,39 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.stream-selector {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.stream-tabs {
+background-color: $telus-white;
+display: flex;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.stream-tab {
+padding: 10px 20px;
+background-color:  $telus-grey-light ;
+color: $telus-purple;
+border: none;
+cursor: pointer;
+font-size: 16px;
+border-radius: 20px;
+transition: background-color 0.3s;
+}
+
+.stream-tab:hover {
+background-color: $telus-purple-dark;
+}
+
+.stream-tab.active {
+background-color: $telus-purple;
+color: $telus-white;
+}
+
+.stream-details {
+font-size: 18px;
+}
