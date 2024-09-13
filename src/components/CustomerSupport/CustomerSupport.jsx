@@ -1,12 +1,13 @@
 import "./CustomerSupport.scss";
 import CloseIcon from "../../assets/close-24px.svg";
+import Button from "../Button/Button";
 
 
 const CustomerSupport = ({ setIsOpen }) => {
 
 return (
     <div className="wrapper" onClick={() => setIsOpen(false)}>
-        <div className="modal">
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
         <div className="modal__inner">
             <button
                 className="modal__popup-button"
@@ -20,31 +21,31 @@ return (
             </button>
             <div className="modal__buttons">
             <div className="modal__button-group">
-                <button
+                <Button
                     className="modal__button"
                     onClick={() => setIsOpen(false)}
                 >
                 Customer Support
-                </button>
+                </Button>
 
-                <button
+                <Button
                     className="modal__button"
                     onClick={() => setIsOpen(false)}
                 >
                 Forums
-                </button>
+                </Button>
 
-                <button
+                <Button
                     className="modal__button"
                     onClick={() => setIsOpen(false)}
                 >
                 Contact us
-                </button>
+                </Button>
             </div>
 
-            <button className="modal__button modal__button--last" onClick={() => setIsOpen(false)}>
+            <Button className="modal__button modal__button--last" onClick={() => setIsOpen(false)}>
                 Call: 1 800 TELUS
-            </button>
+            </Button>
             </div>
         </div>
         </div>
