@@ -57,4 +57,12 @@ p {
 	line-height: 1.625rem;
 	margin: 0;
 }
+.modal-icon{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	& img{
+		width: 100px;
+	}
+}
 
