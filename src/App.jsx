@@ -8,19 +8,30 @@ import { useState } from "react";
 // import StreamingSiteDetails from "./components/StreamingSiteDetails/StreamingSiteDetails";
 import NavBarBundleRender from "./components/NavBarRender/NavBarBundleRender";
 import NavBarStreamSiteRender from "./components/NavBarRender/NavBarStreamSiteRender";
-import NavBarBundle from "./components/NavBar/NavBarBundle/NavBarBundle";
+import NavBarBundle from "./components/NavBar/NavBarBundle/NavBarBundle";import StreamingSiteRender from "./components/StreamingSiteRender/StreamingSiteRender";
+
 function App() {
-	// const [selectBundle, setSelectBundle] = useState('basic');
-	// const handleBundleChange = (event) => {
-	//   setSelectBundle(event.target.value)
-	// }
+  // const [selectBundle, setSelectBundle] = useState('basic');
+  // const handleBundleChange = (event) => {
+  //   setSelectBundle(event.target.value)
+  // }
 
-	return (
-		<div>
-      <NavBarBundle />
+  return (
+    <div>
+      {/* <NavBarBundleRender />
+      <NavBarStreamSiteRender />
+      <BundleDetails bundleObject={BundleData.bundles.premium} /> */}
+      {/* {selectedBundle === 'basic' && (
+        <BundleDetails bundleObject={bundleData.bundles.basic} />
+      )}
 
-		</div>
-	);
+      {selectedBundle === 'premium' && (
+        <BundleDetails bundleObject={bundleData.bundles.premium} />
+      )} */}
+      {/* <StreamingSiteRender />
+      <NavBarBundle /> */}
+    </div>
+  );
 }
 
 export default App;
