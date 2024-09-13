@@ -63,6 +63,9 @@ p {
 	justify-content: flex-end;
 	& img{
 		width: 100px;
+		position: absolute;
+		top: 98%;
+		right: 15%;
 	}
 }
 
