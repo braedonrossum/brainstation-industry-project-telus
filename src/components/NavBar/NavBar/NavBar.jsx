@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './NavBar.scss';
 
-const NavBarBundle = ({streams, details, setSite}) => {
+const NavBar = ({streams, details, setSite}) => {
 const [selectedStream, setSelectedStream] = useState(streams[0]);
 
     let site ='netflix';
@@ -16,8 +16,11 @@ else if (selectedStream === 'Telus TV'){
 }
 
 useEffect(() => {
-    setSite(site);
+    if(setSite){
+        setSite(site);
+    }
 }, [selectedStream]);
+
 
 return (
 <div className="stream-selector">
