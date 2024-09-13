@@ -1,31 +1,39 @@
 import React, { useState } from 'react';
 import './NavBarBundle.scss';
+import streamData from '../../../data/data.json'; 
 
 const NavBarBundle = () => {
-const [SelectedStream, setSelectedStream] = useState('Stream+ Basic');
+    const [selectedStream, setSelectedStream] = useState(null);
+    const [showPrice, setShowPrice] = useState(false);
+    const streams = [
+    { name: 'Stream+ Basic', price: streamData.bundles.basic.price },
+    { name: 'Stream+ Premium', price: streamData.bundles.premium.price }
+    ];
+    const handleButtonClick = (stream) => {
+    setSelectedStream(stream);
+    setShowPrice(true);
+    };
 
-const streams = ['Stream+ Basic', 'Stream+ Premium'];
-
-return (
-<div className="stream-selector">
+    return (
+    <div className="stream-selector">
     <div className="stream-tabs">
-    {streams.map((stream) => (
+        {streams.map((stream) => (
         <button
-        key={stream}
-        className={`stream-tab ${SelectedStream === stream ? 'active' : ''}`}
-        onClick={() => setSelectedStream(stream)}
+            key={stream.name}
+            className={`stream-tab ${selectedStream === stream.name ? 'active' : ''}`}
+            onClick={() => handleButtonClick(stream.name)}
         >
-        {stream}
+            {selectedStream === stream.name && showPrice ? `$${stream.price}` : stream.name}
         </button>
-    ))}
+        ))}
     </div>
     <div className="stream-details">
-    <h2>{SelectedStream}</h2>
-    {SelectedStream === 'Stream+ Basic' && <p>Details </p>}
-    {SelectedStream === 'Stream+ Premium' && <p>Details </p>}
+        <h2>{selectedStream}</h2>
+        {selectedStream === 'Stream+ Basic' && <p>{streamData.bundles.basic['plan-description']}</p>}
+        {selectedStream === 'Stream+ Premium' && <p>{streamData.bundles.premium['plan-description']}</p>}
     </div>
-</div>
-);
-};
+    </div>
+    );
+    };
 
-export default NavBarBundle;
+    export default NavBarBundle;
