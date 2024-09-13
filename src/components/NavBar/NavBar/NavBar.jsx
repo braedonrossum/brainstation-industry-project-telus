@@ -4,8 +4,19 @@ import './NavBar.scss';
 const NavBarBundle = ({streams, details, setSite}) => {
 const [selectedStream, setSelectedStream] = useState(streams[0]);
 
+    let site ='netflix';
+if (selectedStream === 'Netflix'){
+    let site='netflix';
+} else if (selectedStream==='Disney+') {
+    site ='disney-plus' 
+}else if (selectedStream=== 'Amazon Prime'){
+    site ='amazon';}
+else if (selectedStream === 'Telus TV'){
+    site ='telus-tv';
+}
+
 useEffect(() => {
-    setSite(selectedStream);
+    setSite(site);
 }, [selectedStream]);
 
 return (

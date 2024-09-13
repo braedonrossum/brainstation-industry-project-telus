@@ -24,7 +24,7 @@ function StreamingSiteDetails({ plan = "premium", site = "netflix" }) {
 				<p>{data.bundles.basic["streaming-sites"][site].description}</p>
 				<div className="streaming-details__button-space">
 					<button className="streaming-details__value-button">
-						{`Value of ${data.bundles[plan]["streaming-sites"][site]["retail-price"]}`}
+						{site==='telus-tv'? `Included`: `Value of ${data.bundles[plan]["streaming-sites"][site]["retail-price"]}`}
 					</button>
 				</div>
 			</div>

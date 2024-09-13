@@ -3,7 +3,7 @@ import data from "../../data/data.json";
 
 
 export default function NavBarStreamSiteRender({ setSite }) {
-    const streams = ['Netflix', 'Disney+', 'Amazon', 'Telus'];
+    const streams = ['Netflix', 'Disney+', 'Amazon Prime',  'Telus TV'];
     const selectedStream = {
         'Netflix': '',
         'Disney+': '',
