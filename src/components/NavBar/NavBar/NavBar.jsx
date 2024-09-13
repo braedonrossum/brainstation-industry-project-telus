@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavBar.scss';
 
-const NavBarBundle = ({streams, details}) => {
+const NavBarBundle = ({streams, details, setSite}) => {
 const [selectedStream, setSelectedStream] = useState(streams[0]);
+
+useEffect(() => {
+    setSite(selectedStream);
+}, [selectedStream]);
 
 return (
 <div className="stream-selector">
