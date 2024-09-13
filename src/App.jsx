@@ -5,24 +5,22 @@ import BundleDetails from './components/BundleDetails/BundleDetails'
 import BundleData from './data/data.json'
 import { useState } from 'react';
 
-// import NavBarBundleRender from './components/NavBarRender/NavBarBundleRender'
-// import NavBarStreamSiteRender from './components/NavBarRender/NavBarStreamSiteRender'
+import NavBarBundleRender from './components/NavBarRender/NavBarBundleRender'
+import NavBarStreamSiteRender from './components/NavBarRender/NavBarStreamSiteRender'
 
 
 function App() {
-  const [selectBundle, setSelectBundle] = useState('basic');
-  const handleBundleChange = (event) => {
-    setSelectBundle(event.target.value)
-  }
+  // const [selectBundle, setSelectBundle] = useState('basic');
+  // const handleBundleChange = (event) => {
+  //   setSelectBundle(event.target.value)
+  // }
 
 
   return (
     <div>
-
-
       {/* <NavBarBundleRender />
-      <NavBarStreamSiteRender /> */}
-      <BundleDetails bundleObject={BundleData.bundles.premium} />
+      <NavBarStreamSiteRender />
+      <BundleDetails bundleObject={BundleData.bundles.premium} /> */}
       {/* {selectedBundle === 'basic' && (
         <BundleDetails bundleObject={bundleData.bundles.basic} />
       )}
