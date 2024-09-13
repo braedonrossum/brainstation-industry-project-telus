@@ -23,7 +23,7 @@ function App() {
 			{/* {selectedBundle === 'basic' && (
         <BundleDetails bundleObject={bundleData.bundles.basic} />
       )}
-
+        
       {selectedBundle === 'premium' && (
         <BundleDetails bundleObject={bundleData.bundles.premium} />
       )} */}
