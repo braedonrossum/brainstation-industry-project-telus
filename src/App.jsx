@@ -8,7 +8,7 @@ import { useState } from "react";
 // import StreamingSiteDetails from "./components/StreamingSiteDetails/StreamingSiteDetails";
 import NavBarBundleRender from "./components/NavBarRender/NavBarBundleRender";
 import NavBarStreamSiteRender from "./components/NavBarRender/NavBarStreamSiteRender";
-
+import NavBarBundle from "./components/NavBar/NavBarBundle/NavBarBundle";
 function App() {
 	// const [selectBundle, setSelectBundle] = useState('basic');
 	// const handleBundleChange = (event) => {
@@ -17,16 +17,8 @@ function App() {
 
 	return (
 		<div>
-			{/* <NavBarBundleRender />
-      <NavBarStreamSiteRender />
-      <BundleDetails bundleObject={BundleData.bundles.premium} /> */}
-			{/* {selectedBundle === 'basic' && (
-        <BundleDetails bundleObject={bundleData.bundles.basic} />
-      )}
-        
-      {selectedBundle === 'premium' && (
-        <BundleDetails bundleObject={bundleData.bundles.premium} />
-      )} */}
+      <NavBarBundle />
+
 		</div>
 	);
 }

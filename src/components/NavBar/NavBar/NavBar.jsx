@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './NavBar.scss';
 
-const NavBarBundle = ({streams, details}) => {
+const NavBar = ({streams, details}) => {
 const [selectedStream, setSelectedStream] = useState(streams[0]);
 
 return (
@@ -25,4 +25,4 @@ return (
 );
 };
 
-export default NavBarBundle;
+export default NavBar;
