@@ -54,7 +54,9 @@
 			"price": "38",
 			"original-value": "45.97",
 			"percent-savings": "17",
-			"plan-description": "*AD FREE* Some decisions are stressful, but saving 17% off your favourite streaming services is a no brainer. Plus, you can easily transfer over your current streaming subscriptions to Stream+."
-		}
+			"plan-description": ["AD FREE",
+			 "Some decisions are stressful, but saving 17% off your favourite streaming services is a no brainer. Plus, you can easily transfer over your current streaming subscriptions to Stream+."
+								]
+			}
 	}
 }
