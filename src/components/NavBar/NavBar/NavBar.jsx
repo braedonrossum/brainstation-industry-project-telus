@@ -40,4 +40,4 @@ return (
 );
 };
 
-export default NavBarBundle;
+export default NavBar;

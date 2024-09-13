@@ -8,7 +8,7 @@ import { useState } from "react";
 // import StreamingSiteDetails from "./components/StreamingSiteDetails/StreamingSiteDetails";
 import NavBarBundleRender from "./components/NavBarRender/NavBarBundleRender";
 import NavBarStreamSiteRender from "./components/NavBarRender/NavBarStreamSiteRender";
-import StreamingSiteRender from "./components/StreamingSiteRender/StreamingSiteRender";
+import NavBarBundle from "./components/NavBar/NavBarBundle/NavBarBundle";import StreamingSiteRender from "./components/StreamingSiteRender/StreamingSiteRender";
 
 function App() {
   // const [selectBundle, setSelectBundle] = useState('basic');
@@ -28,7 +28,8 @@ function App() {
       {selectedBundle === 'premium' && (
         <BundleDetails bundleObject={bundleData.bundles.premium} />
       )} */}
-      <StreamingSiteRender />
+      {/* <StreamingSiteRender />
+      <NavBarBundle /> */}
     </div>
   );
 }
