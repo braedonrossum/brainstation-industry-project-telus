@@ -1,9 +1,7 @@
-
 import React, { useState } from 'react';
 import './NavBarBundle.scss';
 import streamData from '../../../data/data.json'; 
 import BundleDetails from '../../BundleDetails/BundleDetails';
-
 
 function NavBarBundle(){
     const [selectedStream, setSelectedStream] = useState(null);
@@ -22,30 +20,31 @@ function NavBarBundle(){
             <div className="stream-tabs">
                 {streams.map((stream) => (
                     <button
-                    key={stream.name}
-                    className={`stream-tab ${selectedStream?.name === stream.name ? 'active' : ''}`}
-                    onClick={() => handleButtonClick(stream)}
+                        key={stream.name}
+                        className={`stream-tab ${selectedStream?.name === stream.name ? 'active' : ''}`}
+                        onClick={() => handleButtonClick(stream)}
                     >
-                    {selectedStream?.name === stream.name ? `$${stream.price}` : stream.name}
+                        {stream.name}
                     </button>
                 ))}
             </div>
             <div className="stream-details">
                 {selectedStream && (
                     <>
-                        <h2>{selectedStream.name}</h2>
+                        <button className="price-button">
+                            ${selectedStream.price}
+                        </button>
+                        
                         {
                             selectedStream.name === 'Stream+ Basic'
                             ? <BundleDetails bundleObject={streamData.bundles.basic} />
-                            : <BundleDetails bundleObject={streamData.bundles.premium}/>
+                            : <BundleDetails bundleObject={streamData.bundles.premium} />
                         }
-
                     </>
-            )}
+                )}
             </div>
         </div>
-        );
-
+    );
 }
 
 export default NavBarBundle;

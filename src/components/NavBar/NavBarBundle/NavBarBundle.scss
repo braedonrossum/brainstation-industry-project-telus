@@ -37,3 +37,14 @@ color: $telus-white;
 .stream-details {
 font-size: 18px;
 }
+
+.price-button {
+    background-color: $telus-purple;
+    color: $telus-white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
