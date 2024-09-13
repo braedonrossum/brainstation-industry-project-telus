@@ -5,6 +5,7 @@ import BundleDetails from './components/BundleDetails/BundleDetails'
 import BundleData from './data/data.json'
 import {useState} from 'react';
 
+import NavBarBundle from './components/NavBar/NavBarBundle/NavBarBundle'
 
 function App() {
   const [selectBundle, setSelectBundle] = useState('basic');
@@ -16,8 +17,11 @@ function App() {
 
   return (
     <div>
+      
+     
+      <NavBarBundle />
       <BundleDetails bundleObject = {BundleData.bundles.premium} />
-      {/* {selectedBundle === 'basic' && (
+       {/* {selectedBundle === 'basic' && (
         <BundleDetails bundleObject={bundleData.bundles.basic} />
 )}
 
