@@ -1,0 +1,45 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+// .bundle-details {
+//   display: flex;
+//   flex-direction: column;
+//   border-radius: 0.25rem;
+//   box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+//   //   width: 20px;
+//   //   height: 20px;
+//   align-items: center;
+//   justify-content: center;
+
+//   &__info {
+//     color: black;
+//   }
+// }
+
+.bundle-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  max-width: 300px;
+
+  ul {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    // list-style-type: none;
+
+    li {
+      text-align: left;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+      border-bottom: 1px solid $telus-grey-light;
+    }
+  }
+}
