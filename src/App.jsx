@@ -7,10 +7,13 @@ import { useState } from 'react';
 
 import NavBarBundleRender from './components/NavBarRender/NavBarBundleRender'
 import NavBarStreamSiteRender from './components/NavBarRender/NavBarStreamSiteRender'
+import CustomerSupport from './components/CustomerSupport/CustomerSupport'
+
 
 
 function App() {
   // const [selectBundle, setSelectBundle] = useState('basic');
+  // const [isOpen, setIsOpen] = useState(false);
   // const handleBundleChange = (event) => {
   //   setSelectBundle(event.target.value)
   // }
@@ -28,6 +31,11 @@ function App() {
       {selectedBundle === 'premium' && (
         <BundleDetails bundleObject={bundleData.bundles.premium} />
       )} */}
+{/* 
+      <div className="" onClick={() => setIsOpen(true)}>
+        <img src="" alt="Raccoon image" />
+      </div>
+      {isOpen && <CustomerSupport setIsOpen={setIsOpen} />} */}
     </div>
   )
 }
