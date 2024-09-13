@@ -6,7 +6,7 @@ const [selectedStream, setSelectedStream] = useState(streams[0]);
 
     let site ='netflix';
 if (selectedStream === 'Netflix'){
-    let site='netflix';
+    site='netflix';
 } else if (selectedStream==='Disney+') {
     site ='disney-plus' 
 }else if (selectedStream=== 'Amazon Prime'){
