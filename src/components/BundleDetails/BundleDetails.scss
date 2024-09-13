@@ -2,29 +2,33 @@
 @use "../../styles/mixins" as *;
 
 .bundle-details {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  padding: 20px;
-  background-color: white;
+  width: 35%;
+  padding: 1.5rem;
+  background-color: $telus-purple;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  max-width: 300px;
+  // width: 100%;
+  margin-top: 1.5rem;
 
   ul {
-    width: 80%;
-    max-width: 300px;
-    margin: 0 auto;
-    // padding: 0;
-    // list-style-type: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 
     li {
-      text-align: left;
-      margin-bottom: 10px;
       position: relative;
-      padding-left: 20px;
-      // border-bottom: 1px solid $telus-grey-light;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      //   color: $telus-grey;
+      color: white;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: $telus-purple-dark;
+        font-size: 1.2rem;
+      }
     }
   }
 }

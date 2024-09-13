@@ -17,7 +17,7 @@ function App() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div>
+		<div className="bundle-wrapper">
 			<NavBarBundle selectBundle={setSelectBundle} />
 			<StreamingSiteRender currentBundle={selectedBundle} />
 			<div className="modal-icon">
